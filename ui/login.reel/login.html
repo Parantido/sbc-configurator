@@ -9,12 +9,37 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "btnLogin": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "btnLogin"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "txtPassword": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "txtPassword"},
+                "placeholderValue": "Text"
+            }
+        },
+        "txtUsername": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "txtUsername"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="Login">
+        <input data-montage-id="txtUsername" type="text">
+        <input data-montage-id="txtPassword" type="text">
+        <button data-montage-id="btnLogin"></button>
     </div>
 </body>
 </html>
