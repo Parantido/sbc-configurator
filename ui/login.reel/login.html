@@ -10,6 +10,13 @@
                 "element": {"#": "owner"}
             }
         },
+        "Login": {
+            "prototype": "digit/ui/title.reel",
+            "properties": {
+                "element": {"#": "Login"},
+                "value": "Title"
+            }
+        },
         "btnLogin": {
             "prototype": "digit/ui/button.reel",
             "properties": {
@@ -37,6 +44,7 @@
 </head>
 <body>
     <div data-montage-id="owner" class="Login">
+        <h1 data-montage-id="Login"></h1>
         <input data-montage-id="txtUsername" type="text">
         <input data-montage-id="txtPassword" type="text">
         <button data-montage-id="btnLogin"></button>
